@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JavaScript Event Playground</h1>
+    
+    <!-- Event Handling Section -->
+    <section id="event-section">
+        <h2>Event Handling</h2>
+        <button id="click-me">Click Me!</button>
+        <div id="hover-area">Hover Over Me!</div>
+        <input type="text" id="keypress-input" placeholder="Type something...">
+        <p id="keypress-output"></p>
+        <div id="secret-area">Double Click for a Surprise!</div>
+    </section>
+    
+    <!-- Interactive Elements Section -->
+    <section id="interactive-section">
+        <h2>Interactive Elements</h2>
+        <button id="color-changer">Change My Color</button>
+        
+        <!-- Image Gallery -->
+        <div class="gallery">
+            <img src="/js-event-assignment/img/blog1.jpg" alt="Gallery image" class="active">
+            <img src="/js-event-assignment/img/blog2.jpg" alt="Gallery image">
+            <img src="/js-event-assignment/img/blog3.jpg" alt="Gallery image">
+            <button id="prev-btn">Previous</button>
+            <button id="next-btn">Next</button>
+        </div>
+        
+        <!-- Accordion -->
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header">Section 1</button>
+                <div class="accordion-content">Content for section 1</div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">Section 2</button>
+                <div class="accordion-content">Content for section 2</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Form Validation Section -->
+    <section id="form-section">
+        <h2>Form Validation</h2>
+        <form id="user-form">
+            <div>
+                <label for="name">Name (required):</label>
+                <input type="text" id="name" required>
+                <span class="error-message"></span>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+                <span class="error-message"></span>
+            </div>
+            <div>
+                <label for="password">Password (min 8 chars):</label>
+                <input type="password" id="password">
+                <span class="error-message"></span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
